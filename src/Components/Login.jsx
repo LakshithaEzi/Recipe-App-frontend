@@ -1,5 +1,8 @@
+
+
 function Login() {
     return (
+      <form >
       <div className="flex items-center justify-center min-h-screen bg-gray-100">
         <div className="justify-center px-6 text-left bg-white rounded-lg shadow-md py-14">
             <img src="https://i.postimg.cc/MKD7wbB5/Cook.png" alt="Logo" className="h-[40px] items-center justify-center px-[140px]"></img>
@@ -16,8 +19,9 @@ function Login() {
           <div className="flex items-center justify-center ">
 
           <label className='relative '>
-        <input type="text" placeholder="E-mail" className='h-[40px] w-96 px-6 text-xl text-blue-500 bg-white border-black-700 border-2 rounded-[4px] border-opacity-50 outline-none focus:border-blue-500 placeholder-red-500 placeholder-opacity-0 transition duration-700' />
+        <input type="text" placeholder="E-mail" className='h-[40px] w-96 px-6 text-md text-blue-500 bg-white border-black-700 border-2 rounded-[4px] border-opacity-50 outline-none focus:border-blue-500 placeholder-red-500 placeholder-opacity-0 transition duration-700' />
         <span className='absolute px-2 text-base text-blue-700 transition duration-700 bg-white text-opacity-80 left-4 top-2 input-text'>Password</span>
+        
       </label>
           </div>
           <br/>
@@ -40,7 +44,9 @@ function Login() {
           </div>
         </div>
       </div>
+      </form>
+      
     );
   }
 
-  export default Registration;
+  export default Login;
